@@ -1,0 +1,28 @@
+.newsletter {
+  background-color: #fff;
+  border-radius: 36px;
+  /* max-width: 928px; */
+  width: 928px;
+  height: 641px;
+  display: flex;
+  padding: 30px;
+}
+
+.newsletter_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.content_container {
+  max-width: 376px;
+  height: 446px;
+}
+
+.image_container {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+}
