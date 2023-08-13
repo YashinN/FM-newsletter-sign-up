@@ -25,3 +25,5 @@ const Newsletter = () => {
     </main>
   );
 };
+
+export default Newsletter;
