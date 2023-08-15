@@ -1,4 +1,5 @@
 import styles from "./Newsletter.module.css";
+import IconList from "./IconList";
 
 const Newsletter = () => {
   return (
@@ -10,15 +11,24 @@ const Newsletter = () => {
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
           </header>
           <section>
-            <ul>
+            <ul className={`${styles.list}`}>
               <li>
-                <p> Product discovery and building what matters</p>
+                <span>
+                  <IconList />
+                </span>
+                <p>Product discovery and building what matters</p>
               </li>
               <li>
-                <p>Measuring to ensure updates are a success</p>{" "}
+                <span>
+                  <IconList />
+                </span>
+                <p>Measuring to ensure updates are a success</p>
               </li>
               <li>
-                <p> And much more!</p>
+                <span>
+                  <IconList />
+                </span>
+                <p>And much more!</p>
               </li>
             </ul>
           </section>
