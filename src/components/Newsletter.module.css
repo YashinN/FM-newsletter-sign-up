@@ -55,6 +55,7 @@
 
 .list {
   list-style-type: none;
+  margin-bottom: 40px;
 }
 
 .list li span {
@@ -67,4 +68,29 @@
   align-items: center;
   gap: 15px;
   margin-bottom: 10px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid hsl(231, 7%, 60%);
+  padding-left: 20px;
+  font-size: 16px;
+  color: hsl(231, 7%, 60%);
+  cursor: pointer;
+}
+
+.form input:focus {
+  border: 1px solid hsl(234, 29%, 20%);
+  color: hsl(234, 29%, 20%);
+  outline: none;
+}
+
+.form label {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: inline-block;
 }

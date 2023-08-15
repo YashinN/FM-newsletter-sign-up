@@ -32,10 +32,10 @@ const Newsletter = () => {
               </li>
             </ul>
           </section>
-          <section>
-            <form>
+          <section className={`${styles.form_container}`}>
+            <form className={`${styles.form}`}>
               <label htmlFor="">Email address</label>
-              <input type="email" />
+              <input type="email" placeholder="email@company.com" />
               <button>Subscribe to monthly newslette</button>
             </form>
           </section>
