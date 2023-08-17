@@ -7,19 +7,17 @@
 .newsletter {
   background-color: #fff;
   border-radius: 36px;
-  /* max-width: 928px; */
-  /* width: 928px; */
-  /* height: 641px; */
   padding: 25px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .newsletter_wrapper {
   display: flex;
   justify-content: flex-end;
   padding-left: 50px;
-  gap: 50px;
+  gap: 64px;
 }
 
 .header_container {
@@ -35,8 +33,6 @@
 .image_container {
   display: flex;
   justify-content: flex-end;
-  /* width: 100%;
-  height: 100%; */
 }
 
 .hero_image {
