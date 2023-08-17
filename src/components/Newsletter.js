@@ -66,11 +66,17 @@ const Newsletter = ({
         </div>
 
         <div className={`${styles.image_container}`}>
-          <img
-            className={`${styles.hero_image}`}
-            src="/images/illustration-sign-up-desktop.svg"
-            alt=""
-          />
+          <picture>
+            <source
+              media="(max-width: 740px)"
+              srcset="/images/illustration-sign-up-mobile.svg"
+            />
+            <img
+              className={`${styles.hero_image}`}
+              src="/images/illustration-sign-up-desktop.svg"
+              alt=""
+            />
+          </picture>
         </div>
       </div>
     </main>
