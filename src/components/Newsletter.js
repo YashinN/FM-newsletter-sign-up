@@ -36,7 +36,9 @@ const Newsletter = () => {
             <form className={`${styles.form}`}>
               <label htmlFor="">Email address</label>
               <input type="email" placeholder="email@company.com" />
-              <button>Subscribe to monthly newslette</button>
+              <button className={`${styles.sub_btn}`}>
+                Subscribe to monthly newsletter
+              </button>
             </form>
           </section>
         </div>
