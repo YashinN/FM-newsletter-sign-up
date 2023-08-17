@@ -1,10 +1,10 @@
-const IconList = ({ classN }) => {
+const IconList = ({ classN, width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className={classN}
-      width="21"
-      height="21"
+      width={width}
+      height={height}
       viewBox="0 0 21 21"
     >
       <g fill="none">
