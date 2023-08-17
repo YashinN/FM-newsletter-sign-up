@@ -1,26 +1,13 @@
 import styles from "./Newsletter.module.css";
 import IconList from "./IconList";
-import { useState } from "react";
-import validator from "validator";
 
-const Newsletter = () => {
-  const [email, setEmail] = useState("");
-  const [isEmail, setIsEmail] = useState(true);
-
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-    setIsEmail(true);
-  };
-
-  const clearError = () => {
-    setIsEmail(true);
-  };
-
-  const validateEmail = (e) => {
-    e.preventDefault();
-    validator.isEmail(email) ? setIsEmail(true) : setIsEmail(false);
-  };
-
+const Newsletter = ({
+  onHandleEmail,
+  isEmail,
+  email,
+  handleSubscribe,
+  clearError,
+}) => {
   return (
     <main className={`${styles.newsletter}`}>
       <div className={`${styles.newsletter_wrapper}`}>
@@ -64,13 +51,13 @@ const Newsletter = () => {
                 type="email"
                 placeholder="email@company.com"
                 value={email}
-                onChange={(e) => handleEmail(e)}
+                onChange={(e) => onHandleEmail(e)}
                 onFocus={clearError}
                 className={`${isEmail ? styles.no_error : styles.error}`}
               />
               <button
                 className={`${styles.sub_btn}`}
-                onClick={(e) => validateEmail(e)}
+                onClick={(e) => handleSubscribe(e)}
               >
                 Subscribe to monthly newsletter
               </button>

@@ -1,8 +1,7 @@
-import Newsletter from "./components/Newsletter";
-import Subscribed from "./components/Subscribed";
+import NewsletterMain from "./components/NewsletterMain";
 
 function App() {
-  return <Subscribed />;
+  return <NewsletterMain />;
 }
 
 export default App;
