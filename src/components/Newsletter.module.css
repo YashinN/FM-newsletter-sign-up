@@ -16,8 +16,8 @@
 .newsletter_wrapper {
   display: flex;
   justify-content: flex-end;
-  padding-left: 50px;
-  gap: 64px;
+  padding-left: 2vw;
+  gap: 3.5vw;
 }
 
 .header_container {
