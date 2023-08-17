@@ -19,7 +19,7 @@
   display: flex;
   justify-content: flex-end;
   padding-left: 50px;
-  gap: 30px;
+  gap: 50px;
 }
 
 .header_container {
@@ -35,8 +35,8 @@
 .image_container {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 
 .hero_image {
@@ -80,14 +80,43 @@
   width: 100%;
   height: 56px;
   border-radius: 8px;
-  border: 1px solid hsl(231, 7%, 60%);
   padding-left: 20px;
   font-size: 16px;
-  color: hsl(231, 7%, 60%);
   cursor: pointer;
   margin-bottom: 24px;
 }
 
+.form input {
+  display: block;
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  padding-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.no_error {
+  border: 1px solid hsl(231, 7%, 60%);
+  color: hsl(231, 7%, 60%);
+}
+
+.error {
+  border: 1px solid #ff6257;
+  background-color: #fae6e5;
+  color: #ff6257;
+}
+
+.error_msg {
+  color: #ff6257 !important;
+  font-weight: 700;
+}
+
+.label_container {
+  display: flex;
+  justify-content: space-between;
+}
 .form input:focus {
   border: 1px solid hsl(234, 29%, 20%);
   color: hsl(234, 29%, 20%);
