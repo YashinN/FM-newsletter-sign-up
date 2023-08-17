@@ -1,3 +1,5 @@
+import "./Subscribed.module.css";
+
 const Subscribed = () => {
   return (
     <section>
