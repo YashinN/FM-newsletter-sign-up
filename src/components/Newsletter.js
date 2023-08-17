@@ -1,7 +1,10 @@
 import styles from "./Newsletter.module.css";
 import IconList from "./IconList";
+import { useState } from "react";
 
 const Newsletter = () => {
+  const [email, setEmail] = useState("");
+
   return (
     <main className={`${styles.newsletter}`}>
       <div className={`${styles.newsletter_wrapper}`}>
@@ -35,7 +38,12 @@ const Newsletter = () => {
           <section className={`${styles.form_container}`}>
             <form className={`${styles.form}`}>
               <label htmlFor="">Email address</label>
-              <input type="email" placeholder="email@company.com" />
+              <input
+                type="email"
+                placeholder="email@company.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <button className={`${styles.sub_btn}`}>
                 Subscribe to monthly newsletter
               </button>
